@@ -8,4 +8,5 @@ public interface IAutoConst {
 	String RES_PATH="./result/Summary.xlsx";
 	String CONFIG_PATH="./input/config.properties";
 	String DATA_PATH="./input/data.xlsx";
+	String PHOTO_PATH="./photo";
 }

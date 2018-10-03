@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import generic.Utility;
 
-public class Result extends BaseTest implements ITestListener,IAutoConst{
+public class Result implements ITestListener,IAutoConst{
 	static int passCount=0,failCount=0;
 	public void onTestSuccess(ITestResult result) {
 		String name=result.getName();
@@ -17,7 +17,7 @@ public class Result extends BaseTest implements ITestListener,IAutoConst{
 		String name=result.getName();
 		Reporter.log("Test:"+name+" is Fail",true);
 		failCount++;
-		Utility.getPhoto(driver,"./photo");
+		
 	}
 	public void onFinish(ITestContext context) {
 		Reporter.log("Pass:"+passCount,true);
@@ -29,11 +29,7 @@ public class Result extends BaseTest implements ITestListener,IAutoConst{
 		// TODO Auto-generated method stub
 		
 	}
-
 	
-
-	
-
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -51,11 +47,6 @@ public class Result extends BaseTest implements ITestListener,IAutoConst{
 		// TODO Auto-generated method stub
 		
 	}
-
-
-
-	
-
 }
 
 

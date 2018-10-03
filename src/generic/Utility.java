@@ -21,11 +21,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class Utility {
 	public static String getPhoto(WebDriver driver,String folder) {
 		Date d=new Date();
-		System.out.println(d.toString());
+		//System.out.println(d.toString());
 		String dateTime=d.toString().replaceAll(":","_");
-		System.out.println(dateTime);
+		//System.out.println(dateTime);
 		String path=folder+"/"+dateTime+".png";
-		System.out.println(path);
+		//System.out.println(path);
 		
 		try {
 				TakesScreenshot t=(TakesScreenshot)driver;

@@ -2,18 +2,24 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Happy G J]]>
+      <![CDATA[Executing testA]]>
     </line>
     <line>
       <![CDATA[Test:testA is Fail]]>
     </line>
+    <line>
+      <![CDATA[TestName:testA Status:FAIL]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO:./photo/Wed Oct 03 09_27_26 IST 2018.png]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5139" started-at="2018-10-02T04:56:17Z" finished-at="2018-10-02T04:56:22Z">
+  <suite name="Default suite" duration-ms="5787" started-at="2018-10-03T03:57:21Z" finished-at="2018-10-03T03:57:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5139" started-at="2018-10-02T04:56:17Z" finished-at="2018-10-02T04:56:22Z">
+    <test name="Default test" duration-ms="5787" started-at="2018-10-03T03:57:21Z" finished-at="2018-10-03T03:57:27Z">
       <class name="script.DemoA">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.DemoA@2a5ca609]" name="openApp" is-config="true" duration-ms="4470" started-at="2018-10-02T10:26:17Z" finished-at="2018-10-02T10:26:21Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.DemoA@2a5ca609]" name="openApp" is-config="true" duration-ms="4795" started-at="2018-10-03T09:27:21Z" finished-at="2018-10-03T09:27:26Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="testA()[pri:0, instance:script.DemoA@2a5ca609]" name="testA" duration-ms="6" started-at="2018-10-02T10:26:21Z" finished-at="2018-10-02T10:26:21Z">
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.DemoA@2a5ca609]" name="testA" duration-ms="5" started-at="2018-10-03T09:27:26Z" finished-at="2018-10-03T09:27:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -38,7 +44,7 @@
               <![CDATA[java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)
-	at script.DemoA.testA(DemoA.java:18)
+	at script.DemoA.testA(DemoA.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,15 +75,28 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Happy G J]]>
+              <![CDATA[Executing testA]]>
             </line>
             <line>
               <![CDATA[Test:testA is Fail]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:script.DemoA@2a5ca609]" name="closeApp" is-config="true" duration-ms="640" started-at="2018-10-02T10:26:21Z" finished-at="2018-10-02T10:26:22Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.DemoA@2a5ca609]" name="closeApp" is-config="true" duration-ms="971" started-at="2018-10-03T09:27:26Z" finished-at="2018-10-03T09:27:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=DemoA.testA()[pri:0, instance:script.DemoA@2a5ca609] output=Executing testA]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[TestName:testA Status:FAIL]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO:./photo/Wed Oct 03 09_27_26 IST 2018.png]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.DemoA -->
